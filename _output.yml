@@ -1,0 +1,28 @@
+bookdown::gitbook:
+  number_sections : false
+  split_by: 'chapter'
+  config:
+    theme: 'white'
+    toc:
+      collapse: section
+      scroll_highlight: true
+      before: |
+        <li><a href="./index.html"><b>образы (книга без иллюстраций)</b></a></li>
+    download: ["pdf", "epub", "mobi", "docx"] 
+    edit: null
+    search: no
+    sharing:
+      facebook: yes
+      twitter: yes
+      google: no
+      linkedin: no
+      weibo: no
+      instapaper: no
+      vk: yes
+      all: []
+bookdown::epub_book: default
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+  latex_engine: xelatex
+  keep_tex: no

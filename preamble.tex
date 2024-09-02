@@ -1,0 +1,30 @@
+\usepackage[russian]{babel}
+\usepackage{titlesec}
+
+\usepackage{hyperref}
+\hypersetup{
+   colorlinks=true,
+   linkcolor=black,
+   urlcolor=blue
+}
+
+\addto\captionsrussian{\renewcommand*\contentsname{Содержание}}
+
+\makeatletter
+
+\renewcommand{\@seccntformat}[1]{%
+  \ifcsname prefix@#1\endcsname
+    \csname prefix@#1\endcsname
+  \else
+    \csname the#1\endcsname\quad
+  \fi}
+
+\newcommand\prefix@section{}
+\newcommand\prefix@subsection{}
+\newcommand\prefix@subsubsection{}
+
+\renewcommand{\thesection}{}
+\renewcommand{\thesubsection}{}
+\renewcommand{\thesubsubsection}{}
+
+\makeatother
