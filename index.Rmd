@@ -1,6 +1,6 @@
 --- 
 title: "образы (книга без иллюстраций)"
-author: "Павел Любецкий"
+author: "Павел Любецкий, его фантомы и миражи"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
